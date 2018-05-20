@@ -32,5 +32,13 @@ i {
     text-transform: capitalize;
     font-size: 18px;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+}
+
+.error {
+    background-color: #b71c1c;
+    color: #ffebee;
+    text-align: center;
+    line-height: 2.5;
+    opacity: 0.6;
 }

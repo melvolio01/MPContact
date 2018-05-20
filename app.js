@@ -32,8 +32,14 @@ function getPostcode(){
         console.log(constituency);
         return constituency;
             }
-        });
-    } 
+        })
+        .catch(function() {
+            errorMessage(`Please enter a valid UK Postcode`, 'error');
+        })
+
+    } else {
+        errorMessage('Please enter a valid UK Postcode', 'error');
+    }
 }
 
 function getMember() {
@@ -80,4 +86,15 @@ function appendResults(){
                         `
 }
 
+function errorMessage(messageText, messageClass) {
+    message.innerHTML = `<p>${messageText}</p>`;
+    message.classList.add(messageClass);
+
+
+    setTimeout(function(){
+      message.innerHTML = '';
+      message.classList.remove(messageClass);
+    }, 2000);
+
+}
 
