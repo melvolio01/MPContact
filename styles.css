@@ -1,0 +1,35 @@
+li {
+    list-style: none;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+body {
+    background-color: #fff8e1;
+    color: #4e342e;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#postcode {
+    text-align: center;
+}
+
+i {
+    margin-right: 20px;
+}
+
+.button {
+    background-color: #4e342e;
+    color: #fff8e1;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5%;
+}
