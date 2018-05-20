@@ -37,7 +37,7 @@ function getPostcode(){
 }
 
 function getMember() {
-    memberUrl = `http://data.parliament.uk/membersdataplatform/services/mnis/members/query/constituency=${constituency}/`;
+    memberUrl = `https://data.parliament.uk/membersdataplatform/services/mnis/members/query/constituency=${constituency}/`;
     fetch(memberUrl)
     .then(function(response){
         return response.text();
@@ -55,7 +55,7 @@ function getMember() {
 }
 
 function getEmail(){
-    emailUrl = `http://data.parliament.uk/membersdataplatform/services/mnis/members/query/name=${uriMember}/Addresses/`;
+    emailUrl = `https://data.parliament.uk/membersdataplatform/services/mnis/members/query/name=${uriMember}/Addresses/`;
     fetch(emailUrl)
     .then(function(response){
         return response.text();
