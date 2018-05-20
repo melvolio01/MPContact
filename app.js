@@ -35,10 +35,12 @@ function getPostcode(){
         })
         .catch(function() {
             errorMessage(`Please enter a valid UK Postcode`, 'error');
+            results.innerHTML = '';
         })
 
     } else {
         errorMessage('Please enter a valid UK Postcode', 'error');
+        results.innerHTML = '';
     }
 }
 
